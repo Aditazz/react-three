@@ -273,8 +273,7 @@ var THREEScene = React.createClass({
         var raycaster = this._THREEraycaster;
         var camera = this._THREEcamera;
 
-        mousecoords.unproject(camera);
-        raycaster.ray.set( camera.position, mousecoords.sub( camera.position ).normalize() );
+        raycaster.setFromCamera( mousecoords, camera );
 
         var intersections = raycaster.intersectObjects( this._THREEObject3D.children, true );
         var firstintersection = ( intersections.length ) > 0 ? intersections[ 0 ] : null;

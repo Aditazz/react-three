@@ -50,7 +50,7 @@ render: function() {
 Install and Use with npm
 ========================
 
-The current version of react-three is 0.7.0 which uses React 0.14.
+The current version of react-three is 0.7.x which uses React 0.14.
 
 If you are building a project with a `package.json` file you can
 
